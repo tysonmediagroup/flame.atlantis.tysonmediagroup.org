@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en" class="intro-animated-page" data-theme="noir-aero">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TYSON Atlantis — flame.atlantis.tysonmediagroup.org</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Nunito:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Access Lock Screen Overlay -->
+    <div class="atlantis-lock-overlay" id="atlantis-lock-screen" role="dialog" aria-modal="true" aria-label="Access Verification">
+        <div class="atlantis-lock-card">
+            <img src="assets/LOGOSFORGEMINI/TYSONAtlantisBanner.png" alt="TYSON Atlantis" class="atlantis-lock-logo">
+            <div class="atlantis-lock-domain">flame.atlantis.tysonmediagroup.org</div>
+            <div class="atlantis-lock-subtitle">Sign in with your myTYSON account to access TYSON Atlantis</div>
+            <div class="atlantis-lock-form">
+                <a href="https://auth.my.tysonmediagroup.org?app=atlantis" id="atlantis-sso-btn" class="atlantis-lock-submit" style="display: block; text-decoration: none; text-align: center;">Sign In</a>
+            </div>
+        </div>
+    </div>
+    <!-- Main Top Navigation Header -->
+    <header class="main-header" id="main-header">
+        <div class="container-wide nav-container">
+            <a href="#home" class="nav-logo" aria-label="TYSON Atlantis Home">
+                <img src="assets/LOGOSFORGEMINI/TYSONAtlantisBanner.png" alt="TYSON Atlantis" class="logo-img">
+            </a>
+
+            <nav class="main-nav" id="main-nav">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="player.html" class="nav-link nav-deck-link">Player</a>
+                <a href="#catalog" class="nav-link">Releases</a>
+                <a href="#about" class="nav-link">Philosophy</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="atlantis-lock-btn" class="btn btn-outline btn-sm" title="Lock Session">
+                    <span id="atlantis-active-user-label">Lock</span>
+                </button>
+                <button class="settings-btn" id="settings-toggle-btn" aria-label="Open Appearance Settings" title="Appearance Settings">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                    </svg>
+                </button>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="spa-main-content">
+        <!-- ===================================================================
+             VIEW 1: HOME (#home)
+             =================================================================== -->
+        <div id="view-home" class="page-view active-view">
+            <!-- Hero Section with Traced 'atlantis.tysonmediagroup.org' Title -->
+            <section class="hero-section">
+                <!-- Ambient Frosted Glass Background Stage -->
+                <div class="hero-bg-carousel" aria-hidden="true">
+                    <div class="hero-bg-slide active" style="background-image: url('assets/LOGOSFORGEMINI/ATLANTIS-Sunset.jpg');"></div>
+                    <div class="hero-bg-slide" style="background-image: url('assets/LOGOSFORGEMINI/ATLANTISPLAYER-FRUTIGERAERO1.webp');"></div>
+                    <div class="hero-bg-slide" style="background-image: url('assets/LOGOSFORGEMINI/ATLANTIS-Sunset2.webp');"></div>
+                    <div class="hero-bg-slide" style="background-image: url('assets/LOGOSFORGEMINI/ATLANTISPLAYER-Sunset3.jpg');"></div>
+                    <div class="hero-bg-slide" style="background-image: url('assets/LOGOSFORGEMINI/ATLANTISPLAYER_NightGasStation1.jpg');"></div>
+                    <div class="hero-bg-overlay"></div>
+                </div>
+
+                <div class="container-wide hero-container">
+                    <div class="hero-tag-wrap">
+                        <span class="editorial-tag">SONIC ARCHITECTURE &bull; ATLANTIS EMOTION AMBIENCE</span>
+                    </div>
+
+                    <!-- Centerpiece Title: Exact SVG Letter-by-Letter Trace -->
+                    <div class="hero-domain-stage">
+                        <svg class="domain-hero-svg" viewBox="0 0 1320 110" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <style>
+                                    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,600&amp;display=block');
+                                    .domain-hero-text {
+                                        font-family: 'Cormorant Garamond', Georgia, serif !important;
+                                        font-style: italic !important;
+                                    }
+                                </style>
+                            </defs>
+                            <text x="50%" y="62%" text-anchor="middle" dominant-baseline="middle" class="domain-hero-text">
+                                <tspan class="trace-char trace-c1">f</tspan><tspan class="trace-char trace-c2">l</tspan><tspan class="trace-char trace-c3">a</tspan><tspan class="trace-char trace-c4">m</tspan><tspan class="trace-char trace-c5">e</tspan><tspan class="trace-char trace-c6">.</tspan><tspan class="trace-char trace-c7">a</tspan><tspan class="trace-char trace-c8">t</tspan><tspan class="trace-char trace-c9">l</tspan><tspan class="trace-char trace-c10">a</tspan><tspan class="trace-char trace-c11">n</tspan><tspan class="trace-char trace-c12">t</tspan><tspan class="trace-char trace-c13">i</tspan><tspan class="trace-char trace-c14">s</tspan><tspan class="trace-char trace-c15">.</tspan><tspan class="trace-char trace-c16">t</tspan><tspan class="trace-char trace-c17">y</tspan><tspan class="trace-char trace-c18">s</tspan><tspan class="trace-char trace-c19">o</tspan><tspan class="trace-char trace-c20">n</tspan><tspan class="trace-char trace-c21">m</tspan><tspan class="trace-char trace-c22">e</tspan><tspan class="trace-char trace-c23">d</tspan><tspan class="trace-char trace-c24">i</tspan><tspan class="trace-char trace-c25">a</tspan><tspan class="trace-char trace-c26">g</tspan><tspan class="trace-char trace-c27">r</tspan><tspan class="trace-char trace-c28">o</tspan><tspan class="trace-char trace-c29">u</tspan><tspan class="trace-char trace-c30">p</tspan><tspan class="trace-char trace-c31">.</tspan><tspan class="trace-char trace-c32">o</tspan><tspan class="trace-char trace-c33">r</tspan><tspan class="trace-char trace-c34">g</tspan>
+                            </text>
+                        </svg>
+                    </div>
+
+                    <!-- Tagline in Cormorant Garamond -->
+                    <h2 class="hero-tagline-title">
+                        Stillness in Motion &bull; Sped Up, Slowed, Pitched &amp; Reverbed
+                    </h2>
+
+                    <!-- Emotional Sub-quote -->
+                    <p class="hero-emotional-subtitle">
+                        "The hum of memory monoliths rising from an infinite sea &bull; Calibrated for nocturnal contemplation."
+                    </p>
+
+                    <!-- Hero Action Buttons -->
+                    <div class="hero-cta-group">
+                        <a href="player.html" class="btn btn-primary hero-launch-btn">
+                            <span>Launch Player &rarr;</span>
+                        </a>
+                        <a href="#emotion-ambience" class="btn btn-secondary">
+                            <span>Emotion Ambience</span>
+                        </a>
+                        <button id="hero-sound-play-btn" class="btn btn-youtube-cta" title="Play At the Speed of Light">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+                            <span id="hero-play-label">Play At the Speed of Light</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Home Content Sections -->
+            <div class="home-content-section">
+                <!-- Featured Audio Player Spotlight Strip -->
+                <section class="section-padding featured-audio-strip">
+                    <div class="container-wide">
+                        <div class="featured-player-card">
+                            <div class="featured-player-left">
+                                <div class="spinning-vinyl-preview" id="home-vinyl-preview">
+                                    <div class="vinyl-disc">
+                                        <div class="vinyl-grooves"></div>
+                                        <div class="vinyl-center-label">
+                                            <img src="assets/LOGOSFORGEMINI/TYSONAtlantisBanner.png" alt="Atlantis">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="featured-track-meta">
+                                    <span class="badge-tag">NOW SPOTLIGHTED &bull; 432Hz</span>
+                                    <h3 id="spotlight-title">At the Speed of Light</h3>
+                                    <p id="spotlight-artist">Dimrain47</p>
+                                    <div class="spotlight-tags">
+                                        <span class="sound-spec">Original Master</span>
+                                        <span class="sound-spec">Slowed + Reverb</span>
+                                        <span class="sound-spec">Sped Up</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="featured-player-actions">
+                                <button class="btn btn-primary track-direct-play-btn" data-track-id="speed-of-light">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                    <span>Stream Now</span>
+                                </button>
+                                <a href="player.html" class="btn btn-outline btn-sm">
+                                    <span>Open Standalone Player &rarr;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sonic Disciplines Grid -->
+                <section class="section-padding" style="border-top: none; padding-top: 1rem;">
+                    <div class="container-wide">
+                        <div class="section-header-row">
+                            <div>
+                                <span class="editorial-tag">AUDIO DISCIPLINES</span>
+                                <h2 class="editorial-title">The Atlantis Sonic Spectrum</h2>
+                            </div>
+                            <a href="#studio" class="btn btn-outline btn-sm">Full Studio Breakdown &rarr;</a>
+                        </div>
+
+                        <div class="grid-4">
+                            <div class="card emotion-card">
+                                <span class="card-num">01</span>
+                                <span class="badge-tag">ACOUSTIC ATMOSPHERE</span>
+                                <h3>Slowed &amp; Reverbed</h3>
+                                <p>Extending harmonic tails, lowering resonant pitch frequencies, and crafting cavernous ambient decay for deep meditative focus.</p>
+                            </div>
+
+                            <div class="card emotion-card">
+                                <span class="card-num">02</span>
+                                <span class="badge-tag">ENERGY &amp; RHYTHM</span>
+                                <h3>Sped Up &amp; Pitched</h3>
+                                <p>Dynamic transient shaping, high-frequency excitation, and tempo manipulation engineered for vivid emotional kinetic energy.</p>
+                            </div>
+
+                            <div class="card emotion-card">
+                                <span class="card-num">03</span>
+                                <span class="badge-tag">HARDWARE NOSTALGIA</span>
+                                <h3>PS2 &amp; XBOX Ambience</h3>
+                                <p>Inspired by the monolithic boot hums of the original Xbox and the infinite ocean towers of the PlayStation 2 system menu.</p>
+                            </div>
+
+                            <div class="card emotion-card">
+                                <span class="card-num">04</span>
+                                <span class="badge-tag">AQUEOUS HARMONICS</span>
+                                <h3>Submerged Space</h3>
+                                <p>Underwater low-pass filtering, marine sound-staging, and oceanic binaural spatialization evoking the sunken stillness of Atlantis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- AtlantisEmotionAmbience Spotlight -->
+                <section class="section-padding">
+                    <div class="container-wide">
+                        <div class="section-header-row">
+                            <div>
+                                <span class="editorial-tag">EMOTIONAL RESONANCE</span>
+                                <h2 class="editorial-title">AtlantisEmotionAmbience</h2>
+                            </div>
+                            <a href="#emotion-ambience" class="btn btn-outline btn-sm">Read the Manifesto &rarr;</a>
+                        </div>
+
+                        <div class="grid-3">
+                            <div class="sound-card emotion-glow-card">
+                                <div class="sound-card-header">
+                                    <span class="sound-tag">CONSOLES OF MEMORY &bull; PS2 COLD BLUE</span>
+                                    <h3>Ocean Monoliths (PS2 Boot)</h3>
+                                    <p>Low-frequency maritime wave oscillations, crystalline rising towers, and the vast, empty calm of the legendary PlayStation 2 BIOS screen.</p>
+                                </div>
+                                <div class="sound-card-footer">
+                                    <span class="sound-spec">432Hz &bull; 100% Wet Reverb &bull; -3.5 Semitones</span>
+                                    <button class="btn btn-outline btn-sm track-direct-play-btn" data-track-id="ps2-bios" style="margin-top: 0.8rem;">
+                                        <span>Play Track &nearr;</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="sound-card emotion-glow-card">
+                                <div class="sound-card-header">
+                                    <span class="sound-tag">NOSTALGIA ARCHIVE &bull; 2010 MEMORY</span>
+                                    <h3>it's 2010 - r e f l e c t i o n s</h3>
+                                    <p>Alyzea acoustic masterpiece slowed and pitched down with ethereal reverb tails, evoking long summer sunsets from 2010.</p>
+                                </div>
+                                <div class="sound-card-footer">
+                                    <span class="sound-spec">Slowed + Pitched &bull; Nostalgia Mix &bull; Warm Tape</span>
+                                    <button class="btn btn-outline btn-sm track-direct-play-btn" data-track-id="its-2010-reflections" style="margin-top: 0.8rem;">
+                                        <span>Play Track &nearr;</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="sound-card emotion-glow-card">
+                                <div class="sound-card-header">
+                                    <span class="sound-tag">ORGANIC CALM &bull; TIDE POOL MEDITATION</span>
+                                    <h3>Tide Pool &bull; Slowed Submersion</h3>
+                                    <p>Gentle aqueous pads, binaural stereo widening, and softened transient decay crafted for nocturnal stillness in motion.</p>
+                                </div>
+                                <div class="sound-card-footer">
+                                    <span class="sound-spec">Official Soundtrack &bull; 0.85x Speed &bull; Extended Lows</span>
+                                    <button class="btn btn-outline btn-sm track-direct-play-btn" data-track-id="tide-pool" style="margin-top: 0.8rem;">
+                                        <span>Play Track &nearr;</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- ===================================================================
+             VIEW 2: AUDIO STUDIO (#studio)
+             =================================================================== -->
+        <div id="view-studio" class="page-view">
+            <section class="page-header">
+                <div class="container-wide page-header-container">
+                    <div class="hero-top-row">
+                        <span class="editorial-tag">SONIC ENGINEERING &bull; DSP PIPELINE</span>
+                    </div>
+                    <div class="hero-bottom-left-anchor">
+                        <h1 class="page-title oversized-faint-title">Studio</h1>
+                        <p class="page-subtitle">
+                            TYSON Atlantis manipulates frequency, time, and spatial depth to transform sound into visceral atmospheric architecture.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding">
+                <div class="container-wide">
+                    <div class="grid-3">
+                        <div class="card emotion-card">
+                            <span class="card-num">I</span>
+                            <span class="badge-tag">DSP PROCESS</span>
+                            <h3>Time-Stretching &amp; Granular Delay</h3>
+                            <p>Stretching audio up to 400% while retaining transient micro-details, scattering sound grains into multi-layered ambient clouds.</p>
+                        </div>
+
+                        <div class="card emotion-card">
+                            <span class="card-num">II</span>
+                            <span class="badge-tag">FREQUENCY SHIFTING</span>
+                            <h3>Harmonic Pitch Modulation</h3>
+                            <p>Fine-pitch detuning down to the sub-bass foundation (-12 to -24 semitones) for dense, weighty sonic depth.</p>
+                        </div>
+
+                        <div class="card emotion-card">
+                            <span class="card-num">III</span>
+                            <span class="badge-tag">ACOUSTIC SPACE</span>
+                            <h3>Convolution &amp; Algorithmic Reverbs</h3>
+                            <p>Simulating immense reflective spaces—from cathedral vaults to underwater canyons and vintage hardware chamber emulations.</p>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 3rem; text-align: center;">
+                        <a href="player.html" class="btn btn-primary">
+                            <span>Open Standalone Player Deck &rarr;</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ===================================================================
+             VIEW 3: ATLANTIS EMOTION AMBIENCE (#emotion-ambience)
+             =================================================================== -->
+        <div id="view-emotion-ambience" class="page-view">
+            <section class="page-header">
+                <div class="container-wide page-header-container">
+                    <div class="hero-top-row">
+                        <span class="editorial-tag">PHILOSOPHICAL SOUNDSCAPES</span>
+                    </div>
+                    <div class="hero-bottom-left-anchor">
+                        <h1 class="page-title oversized-faint-title">Emotion Ambience</h1>
+                        <p class="page-subtitle">
+                            Ambient sound that holds meaning. Inspired by the profound, slightly lonely, yet comforting atmospheres of early 2000s hardware boot screens and boundless virtual worlds.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding">
+                <div class="container" style="max-width: 1080px;">
+                    <div style="font-size: 1.25rem; line-height: 1.95; color: var(--text-body); margin-top: 1rem;">
+                        <div class="modal-callout emotion-manifest-callout" style="margin: 2.5rem 0 3.5rem 0; text-align: center; border-left: none; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); padding: 3rem 2rem;">
+                            <span style="font-family: var(--font-heading); font-size: 3.2rem; font-style: italic; color: var(--text-white); display: block; margin-bottom: 0.5rem; text-shadow: 0 0 25px var(--accent-glow);">
+                                "A Resonance of Memory"
+                            </span>
+                            <span style="font-size: 0.85rem; color: var(--text-dim); letter-spacing: 0.18em; text-transform: uppercase;">
+                                The AtlantisEmotionAmbience Manifest &bull; 432Hz Core
+                            </span>
+                        </div>
+
+                        <p style="margin-bottom: 2.25rem;">
+                            There was an unmistakable emotional weight to turning on a console like the <strong>PlayStation 2</strong> or original <strong>Xbox</strong> late at night. The sound of memory card towers rising from a foggy ocean, or a radioactive core humming in the dark, wasn't just UI audio—it was an invitation into an expansive, calm dimension.
+                        </p>
+                        <p style="margin-bottom: 2.25rem;">
+                            <strong>AtlantisEmotionAmbience</strong> captures that specific feeling. By synthesizing warm tape flutter, sub-octave droning, and shimmering high-register reverberation, we craft sounds that feel like memories you didn't know you had.
+                        </p>
+
+                        <div style="margin: 3.5rem 0; text-align: center;">
+                            <button class="btn btn-primary track-direct-play-btn" data-track-id="ps2-bios">
+                                <span>Experience PS2 Ocean Ambience in Deck &rarr;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ===================================================================
+             VIEW 4: CATALOG & RELEASES (#catalog)
+             =================================================================== -->
+        <div id="view-catalog" class="page-view">
+            <section class="page-header">
+                <div class="container-wide page-header-container">
+                    <div class="hero-top-row">
+                        <span class="editorial-tag">OFFICIAL TYSON ATLANTIS DISCOGRAPHY</span>
+                    </div>
+                    <div class="hero-bottom-left-anchor">
+                        <h1 class="page-title oversized-faint-title">Releases</h1>
+                        <p class="page-subtitle">
+                            Stream and explore original sound design, slowed/reverbed audio productions, and film soundtracks composed for TYSON Media Group.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding">
+                <div class="container-wide">
+                    <div class="grid-3" id="catalog-cards-grid">
+                        <div class="card emotion-card">
+                            <span class="card-num">#001</span>
+                            <span class="badge-tag">DIMRAIN47</span>
+                            <h3>At the Speed of Light</h3>
+                            <p>Dimrain47 — Orchestral electronic trance and high-velocity synth arpeggios.</p>
+                            <div style="margin-top: 1.5rem;">
+                                <button class="btn btn-outline btn-sm track-direct-play-btn" data-track-id="speed-of-light">
+                                    <span>Play Track &circlearrowright;</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card emotion-card">
+                            <span class="card-num">#002</span>
+                            <span class="badge-tag">SLOWED + REVERB</span>
+                            <h3>At the Speed of Light (Slowed + Reverb)</h3>
+                            <p>Dimrain47 slowed to 0.84x pitch and immersed in cathedral reverb.</p>
+                            <div style="margin-top: 1.5rem;">
+                                <button class="btn btn-outline btn-sm track-direct-play-btn" data-track-id="speed-of-light-slowed">
+                                    <span>Play Track &circlearrowright;</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card emotion-card">
+                            <span class="card-num">#003</span>
+                            <span class="badge-tag">DIMRAIN47</span>
+                            <h3>Surface</h3>
+                            <p>Dimrain47 — Melodic electronic leads and rapid-fire rhythmic precision.</p>
+                            <div style="margin-top: 1.5rem;">
+                                <button class="btn btn-outline btn-sm track-direct-play-btn" data-track-id="dimrain-surface">
+                                    <span>Play Track &circlearrowright;</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card emotion-card">
+                            <span class="card-num">#004</span>
+                            <span class="badge-tag">DIMRAIN47</span>
+                            <h3>Infernoplex</h3>
+                            <p>Dimrain47 — Driving synth riffs and classic electronic percussion.</p>
+                            <div style="margin-top: 1.5rem;">
+                                <button class="btn btn-outline btn-sm track-direct-play-btn" data-track-id="dimrain-infernoplex">
+                                    <span>Play Track &circlearrowright;</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card emotion-card">
+                            <span class="card-num">#005</span>
+                            <span class="badge-tag">F-777</span>
+                            <h3>Sonic Blaster</h3>
+                            <p>F-777 — Crisp electro basslines and melodic synth drops.</p>
+                            <div style="margin-top: 1.5rem;">
+                                <button class="btn btn-outline btn-sm track-direct-play-btn" data-track-id="sonic-blaster">
+                                    <span>Play Track &circlearrowright;</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card emotion-card">
+                            <span class="card-num">#006</span>
+                            <span class="badge-tag">NIGHTKILLA</span>
+                            <h3>Nine Circles</h3>
+                            <p>NightKilla — Heavy electronic dubstep and rapid synth sequences.</p>
+                            <div style="margin-top: 1.5rem;">
+                                <button class="btn btn-outline btn-sm track-direct-play-btn" data-track-id="nine-circles">
+                                    <span>Play Track &circlearrowright;</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card emotion-card">
+                            <span class="card-num">#007</span>
+                            <span class="badge-tag">CREO</span>
+                            <h3>Dimension</h3>
+                            <p>Creo — Saxophone melodies fused with atmospheric electronic production.</p>
+                            <div style="margin-top: 1.5rem;">
+                                <button class="btn btn-outline btn-sm track-direct-play-btn" data-track-id="creo-dimension">
+                                    <span>Play Track &circlearrowright;</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card emotion-card">
+                            <span class="card-num">#008</span>
+                            <span class="badge-tag">OFFICIAL SIGNATURE</span>
+                            <h3>tysonmediagroupsunset</h3>
+                            <p>The definitive evening score of TYSON Media Group. Warm sunset pads, extended low-end decay, and serene stillness.</p>
+                            <div style="margin-top: 1.5rem;">
+                                <button class="btn btn-outline btn-sm track-direct-play-btn" data-track-id="tyson-sunset">
+                                    <span>Play Track &circlearrowright;</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card emotion-card">
+                            <span class="card-num">#009</span>
+                            <span class="badge-tag">OFFICIAL SOUNDTRACK</span>
+                            <h3>Tide Pool (Original Core Mix)</h3>
+                            <p>The iconic atmospheric foundation score of the myT5S platform and TYSON Media Group portal.</p>
+                            <div style="margin-top: 1.5rem;">
+                                <button class="btn btn-outline btn-sm track-direct-play-btn" data-track-id="tide-pool">
+                                    <span>Play Track &circlearrowright;</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ===================================================================
+             VIEW 5: ACOUSTIC PHILOSOPHY (#about)
+             =================================================================== -->
+        <div id="view-about" class="page-view">
+            <section class="page-header">
+                <div class="container-wide page-header-container">
+                    <div class="hero-top-row">
+                        <span class="editorial-tag">THE SONIC ETHOS</span>
+                    </div>
+                    <div class="hero-bottom-left-anchor">
+                        <h1 class="page-title oversized-faint-title">Philosophy</h1>
+                        <p class="page-subtitle">
+                            Audio is not background filler—it is the emotional architecture of perception.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding">
+                <div class="container" style="max-width: 1080px;">
+                    <div style="font-size: 1.25rem; line-height: 1.95; color: var(--text-body); margin-top: 1rem;">
+                        <div class="modal-callout emotion-manifest-callout" style="margin: 2.5rem 0 3.5rem 0; text-align: center; border-left: none; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); padding: 3rem 2rem;">
+                            <span style="font-family: var(--font-heading); font-size: 3.2rem; font-style: italic; color: var(--text-white); display: block; margin-bottom: 0.5rem; text-shadow: 0 0 25px var(--accent-glow);">
+                                "Stillness in Motion"
+                            </span>
+                            <span style="font-size: 0.85rem; color: var(--text-dim); letter-spacing: 0.18em; text-transform: uppercase;">
+                                Official Motto &bull; TYSON Atlantis &bull; Audio Studio
+                            </span>
+                        </div>
+
+                        <p style="margin-bottom: 2.25rem;">
+                            At TYSON Atlantis, our approach is rooted in the belief that slowing down, pitch-shifting, and adding spatial reverb isn't just a trend—it unlocks hidden harmonic frequencies that trigger deep human nostalgia.
+                        </p>
+                        <p style="margin-bottom: 2.25rem;">
+                            Whether producing the soundtrack for high-speed racing telemetry films or crafting ambient soundscapes for nocturnal coding, our productions are engineered to create a tranquil sanctuary of sound.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- ===================================================================
+         PERSISTENT FLOATING BOTTOM AUDIO MINI-PLAYER DOCK
+         =================================================================== -->
+    <div class="bottom-audio-dock" id="persistent-audio-dock">
+        <div class="dock-container">
+            <!-- Left: Mini Track Details -->
+            <div class="dock-track-info">
+                <a href="player.html" class="dock-thumb-wrap" title="Open Standalone Player">
+                    <div class="dock-mini-vinyl" id="dock-mini-vinyl">
+                        <img src="assets/LOGOSFORGEMINI/TYSONAtlantisBanner.png" alt="Vinyl Label">
+                    </div>
+                </a>
+                <div class="dock-meta-text">
+                    <a href="player.html" class="dock-title-link" id="dock-track-title">At the Speed of Light</a>
+                    <span class="dock-artist" id="dock-track-artist">Dimrain47</span>
+                </div>
+            </div>
+
+            <!-- Center: Transport & Progress Scrubber -->
+            <div class="dock-controls-center">
+                <div class="dock-buttons-row">
+                    <button class="dock-btn" id="dock-prev-btn" title="Previous Track">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="19 20 9 12 19 4 19 20"></polygon><line x1="5" y1="19" x2="5" y2="5" stroke="currentColor" stroke-width="2.5"></line></svg>
+                    </button>
+                    <button class="dock-btn-play" id="dock-play-btn" title="Play / Pause">
+                        <svg id="dock-play-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                        <svg id="dock-pause-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="display: none;"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+                    </button>
+                    <button class="dock-btn" id="dock-next-btn" title="Next Track">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 4 15 12 5 20 5 4"></polygon><line x1="19" y1="5" x2="19" y2="19" stroke="currentColor" stroke-width="2.5"></line></svg>
+                    </button>
+                </div>
+                <div class="dock-scrubber-row">
+                    <span class="dock-time" id="dock-time-current">0:00</span>
+                    <div class="dock-progress-track" id="dock-progress-wrap">
+                        <div class="dock-progress-fill" id="dock-progress-fill"></div>
+                    </div>
+                    <span class="dock-time" id="dock-time-duration">0:00</span>
+                </div>
+            </div>
+
+            <!-- Right: Mini Visualizer & Deck Launcher -->
+            <div class="dock-actions-right">
+                <canvas id="dock-mini-visualizer" width="80" height="32" class="dock-mini-canvas" title="Live Visualizer"></canvas>
+                <span class="dock-speed-badge" id="dock-speed-badge">1.00x</span>
+                <a href="player.html" class="btn btn-outline btn-xs dock-deck-open-btn" title="Open Full Standalone Player">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                    <span>Player</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Footer with Full 44-Endpoint Registry -->
+    <footer class="main-footer">
+        <div class="container-wide">
+            <div class="footer-top-grid">
+                <div class="footer-brand-col">
+                    <img src="assets/LOGOSFORGEMINI/TYSONAtlantisBanner.png" alt="TYSON Atlantis" class="footer-brand-logo">
+                    <p class="footer-brand-desc">
+                        The acoustic sound laboratory of TYSON Media Group. Specializing in slowed, sped-up, pitched, reverbed audio synthesis, and atmospheric Emotion Ambience.
+                    </p>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4 class="footer-col-title">Navigation</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="player.html">Standalone Player</a></li>
+                        <li><a href="#catalog">Catalog &amp; Releases</a></li>
+                        <li><a href="#emotion-ambience">AtlantisEmotionAmbience</a></li>
+                        <li><a href="#studio">Audio Studio</a></li>
+                        <li><a href="#about">Acoustic Philosophy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4 class="footer-col-title">Media Group Registry</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="https://tysonmediagroup.org" target="_blank" rel="noopener">tysonmediagroup.org &nearr;</a></li>
+                        <li><a href="https://atlantis.tysonmediagroup.org">atlantis.tysonmediagroup.org</a></li>
+                        <li><a href="https://tr.tysonmediagroup.org" target="_blank" rel="noopener">tr.tysonmediagroup.org &nearr;</a></li>
+                        <li><a href="https://myt5s.app" target="_blank" rel="noopener">myt5s.app &nearr;</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Complete 44-Endpoint Registry Collapsible Accordion -->
+            <details class="corporate-directory-accordion">
+                <summary class="corporate-directory-summary">
+                    <span>TYSON Media Group &bull; Complete 44-Endpoint Network Registry</span>
+                    <span class="accordion-icon">+</span>
+                </summary>
+                <div class="corporate-directory-body">
+                    <div class="directory-columns-grid">
+                        <div>
+                            <h5>Core Platforms</h5>
+                            <ul>
+                                <li><a href="https://tysonmediagroup.org" target="_blank" rel="noopener">tysonmediagroup.org &nearr;</a></li>
+                                <li><a href="https://myt5s.app" target="_blank" rel="noopener">myt5s.app &nearr;</a></li>
+                                <li><a href="https://t5s.app" target="_blank" rel="noopener">t5s.app &nearr;</a></li>
+                                <li><a href="https://atlantis.tysonmediagroup.org">atlantis.tysonmediagroup.org</a></li>
+                                <li><a href="https://tr.tysonmediagroup.org" target="_blank" rel="noopener">tr.tysonmediagroup.org &nearr;</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5>Subdomains &amp; Racing</h5>
+                            <ul>
+                                <li><a href="https://323.tr.tysonmediagroup.org" target="_blank" rel="noopener">323.tr.tysonmediagroup.org &nearr;</a></li>
+                                <li><a href="https://525.tr.tysonmediagroup.org" target="_blank" rel="noopener">525.tr.tysonmediagroup.org &nearr;</a></li>
+                                <li><a href="https://11.caymans.tr.tysonmediagroup.org" target="_blank" rel="noopener">11.caymans.tr.tysonmediagroup.org &nearr;</a></li>
+                                <li><a href="https://8.caymans.tr.tysonmediagroup.org" target="_blank" rel="noopener">8.caymans.tr.tysonmediagroup.org &nearr;</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Centered Italic flame.atlantis.tysonmediagroup.org Centerpiece with Glass Gradient Halo -->
+            <div class="footer-domain-centerpiece">
+                <div class="footer-logo-stage">
+                    <img src="assets/LOGOSFORGEMINI/TYSONAtlantisBanner.png" alt="TYSON Atlantis" class="footer-trace-logo">
+                </div>
+                <div class="footer-domain-title">flame.atlantis.tysonmediagroup.org</div>
+                <div class="footer-domain-subtext">Sonic Architecture &bull; AtlantisEmotionAmbience &bull; Stillness in Motion</div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 TYSON Media Group. All rights reserved. Registered acoustic division: <code>flame.atlantis.tysonmediagroup.org</code></div>
+            </div>
+
+            <!-- Project T6 Universal Ecosystem Anchor -->
+            <div class="project-t6-footer-banner" style="display: flex; justify-content: center; align-items: center; padding: 2rem 1rem 1rem; border-top: 1px solid rgba(255, 255, 255, 0.05); margin-top: 1.5rem;">
+                <a href="https://t6graph.tysonmediagroup.org" target="_blank" rel="noopener" title="PROJECT T6 // TYSON Media Group Framework">
+                    <img src="assets/projectT6-logo.png" alt="PROJECT T6" style="height: 32px; width: auto; opacity: 0.85; filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.2)); transition: all 0.3s ease;" onmouseover="this.style.opacity='1'; this.style.filter='drop-shadow(0 0 20px rgba(255, 255, 255, 0.5))'; this.style.transform='scale(1.03)';" onmouseout="this.style.opacity='0.85'; this.style.filter='drop-shadow(0 0 12px rgba(255, 255, 255, 0.2))'; this.style.transform='scale(1)';">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Temporary Bottom Intro Logo with Frosted Glass Halo during trace -->
+    <div class="intro-bottom-logo-wrap">
+        <div class="intro-bottom-logo-stage">
+            <img src="assets/LOGOSFORGEMINI/TYSONAtlantisBanner.png" alt="TYSON Atlantis" class="intro-bottom-logo">
+        </div>
+    </div>
+
+    <!-- Theme & Settings Modal -->
+    <div class="settings-modal" id="settings-modal" aria-hidden="true" role="dialog">
+        <div class="settings-modal-backdrop" id="settings-modal-backdrop"></div>
+        <div class="settings-modal-dialog">
+            <button class="settings-modal-close" id="settings-modal-close-btn" aria-label="Close Settings">&times;</button>
+            <div class="settings-header">
+                <h3 class="settings-title">Portal Preferences</h3>
+                <p class="settings-subtitle">Customize aesthetic theme and typography system.</p>
+            </div>
+
+            <div class="settings-section">
+                <h4 class="settings-section-title">Visual Theme</h4>
+                <div class="theme-options-grid">
+                    <button class="theme-option-card selected" data-theme-choice="noir-aero">
+                        <div class="theme-indicator-row">
+                            <span class="theme-option-title">Black Frutiger Aero</span>
+                            <span class="theme-swatch-circle swatch-noir-aero"></span>
+                        </div>
+                        <span class="theme-option-desc">Obsidian gloss glassmorphism, 50/50 specular reflections &amp; monochrome tactile gel.</span>
+                    </button>
+
+                    <button class="theme-option-card" data-theme-choice="noir">
+                        <div class="theme-indicator-row">
+                            <span class="theme-option-title">Noir Midnight</span>
+                            <span class="theme-swatch-circle swatch-noir"></span>
+                        </div>
+                        <span class="theme-option-desc">Pure OLED black, high-contrast monochrome typography.</span>
+                    </button>
+
+                    <button class="theme-option-card" data-theme-choice="wii">
+                        <div class="theme-indicator-row">
+                            <span class="theme-option-title">Nintendo Wii</span>
+                            <span class="theme-swatch-circle swatch-wii"></span>
+                        </div>
+                        <span class="theme-option-desc">Retro Wii system UI, rounded geometry, and sky blue accents.</span>
+                    </button>
+
+                    <button class="theme-option-card" data-theme-choice="frutiger">
+                        <div class="theme-indicator-row">
+                            <span class="theme-option-title">Frutiger Aero</span>
+                            <span class="theme-swatch-circle swatch-frutiger"></span>
+                        </div>
+                        <span class="theme-option-desc">Early Apple Aqua glass, deep cyan depth, and glossy finishes.</span>
+                    </button>
+
+                    <button class="theme-option-card" data-theme-choice="nature">
+                        <div class="theme-indicator-row">
+                            <span class="theme-option-title">Nature Botanical</span>
+                            <span class="theme-swatch-circle swatch-nature"></span>
+                        </div>
+                        <span class="theme-option-desc">Evergreen forest canopy, moss botanicals, and organic warmth.</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="settings-section" style="margin-bottom: 0;">
+                <button id="replay-intro-btn" class="btn btn-outline btn-sm" style="width: 100%; justify-content: center;">
+                    <span>Replay Launch Intro Sequence &circlearrowright;</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden HTML5 Audio Element for Web Audio API graph -->
+    <audio id="main-audio-element" preload="auto" crossorigin="anonymous"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
