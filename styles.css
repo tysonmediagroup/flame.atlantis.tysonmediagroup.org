@@ -3491,3 +3491,31 @@ body {
 
 
 
+
+/* Responsive Logo & Lock Screen Fixes for Mobile & Half Screen */
+@media (max-width: 1080px) {
+    .logo-img {
+        height: 38px !important;
+        max-width: 280px !important;
+    }
+}
+@media (max-width: 860px) {
+    .logo-img {
+        height: 32px !important;
+        max-width: 220px !important;
+    }
+}
+@media (max-width: 600px) {
+    .logo-img {
+        height: 26px !important;
+        max-width: 170px !important;
+    }
+    .atlantis-lock-card {
+        padding: 2rem 1.25rem;
+        margin: 0 14px;
+        max-width: calc(100% - 28px);
+    }
+    .atlantis-lock-domain {
+        font-size: 1.35rem;
+    }
+}
